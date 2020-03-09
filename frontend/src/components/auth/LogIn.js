@@ -17,9 +17,8 @@ class LogIn extends Component {
 
 
         }catch(err){
-            console.log('=-=-=-=-=-',err.response.data)
 
-            if(err.response.data ==="Unauthorized"){
+            if(err.response && err.response.data ==="Unauthorized"){
                 // this function is fake because we're not actually passing it in
                 // look at the full-stack-library-app to see how to pass in this function for flash messages
                 this.props.doFlashMessage('Email/Password Combination Incorrect, please check credentials and try again', false)
