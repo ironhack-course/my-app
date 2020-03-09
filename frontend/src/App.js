@@ -28,7 +28,7 @@ class App extends Component {
 
     return (
     <BrowserRouter>
-      {this.state.email}
+      {this.state.email}!!!
       <nav>
         <NavLink to="/">Home |</NavLink>
   
